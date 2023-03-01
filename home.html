@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstraps.css">
+  <link rel="stylesheet" href="css/home.css">
+  
+  <!-- Custom CSS -->
+  <style>
+    /* Add your custom CSS styles here */
+    
+  </style>
+</head>
+<body class="bg-body">
+  <div class="container">
+    <!-- Music Player -->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Now Playing</h2>
+        <div id="music-player">
+            <audio id = "player" src = "aserts\Julius Dreisis&Zeus X Crona.mp3"></audio>
+                <div>
+                   <button onclick = "document.getElementById('player').play()">Play</button>
+                   <button onclick = "document.getElementById('player').pause()">Pause</button>
+                   <button onclick = "document.getElementById('player').volume += 0.2">Vol+</button>
+                   <button onclick = "document.getElementById('player').volume -= 0.2">Vol-</button>
+                </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Song List -->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Song List</h2>
+        <div id="song-list">
+          
+          <div class="song">
+            <button type="button" class="song-1">
+                <img src="images\invisible.jpg" alt="Album Artwork">
+            </button>
+            <div class="song-info">
+              <div class="song-title">Invisible</div>
+              <div class="song-artist">Julius Dreisis&Zeus X Crona</div>
+            </div>
+            <a href="aserts\Julius Dreisis&Zeus X Crona.mp3" download class="btn btn-primary btn-sm">Download</a>
+          </div>
+
+          <div class="song">
+            <button type="button" class="song-2">
+                <img src="images\sky high.jpg" alt="Album Artwork">
+            </button>
+            <div class="song-info">
+              <div class="song-title">Sky High</div>
+              <div class="song-artist">Song by Elektronomia</div>
+            </div>
+            <a href="aserts\Elektronomia.mp3" download class="btn btn-primary btn-sm">Download</a>
+          </div>
+
+          <div class="song">
+            <button type="button" class="song-3">
+                <img src="images\Heroes Tonight.jpg" alt="Album Artwork">
+            </button>
+            <div class="song-info">
+              <div class="song-title">Heroes Tonight</div>
+              <div class="song-artist">Song by Janji</div>
+            </div>
+            <a href="aserts\heroes tonight.mp3" download class="btn btn-primary btn-sm">Download</a>
+          </div>
+
+          <div class="song">
+            <button type="button" class="song-4" onclick="document.getElementById('player').play()">
+                <img src="images\why do i.jpg" alt="Album Artwork">
+            </button>
+            <div class="song-info">
+              <div class="song-title">Why Do I?</div>
+              <div class="song-artist">Song by Unknown Brain</div>
+            </div>
+            <a href="" download class="btn btn-primary btn-sm">Download</a>
+          </div>
+
+          <div class="song">
+            <button type="button" class="song-5">
+                <img src="images\Mortals.jpg" alt="Album Artwork">
+            </button>
+                <div class="song-info">
+                    <div class="song-title">Mortals</div>
+                    <div class="song-artist">Song by Laura Brehm and Warriyo</div>
+                </div>
+            <a href="aserts\Julius Dreisis&Zeus X Crona.mp3" download class="btn btn-primary btn-sm">Download</a>
+          </div>
+          <!-- Add more songs here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script>
+    // Add your custom JavaScript code here
+    // You can use jQuery or vanilla JavaScript
+  </script>
+</body>
+</html>

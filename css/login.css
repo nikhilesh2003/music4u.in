@@ -1,0 +1,14 @@
+.log-form{
+    background: rgb(35, 34, 34);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.user{
+    color: white;
+}
+.pass{
+    color: white;
+}
